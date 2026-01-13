@@ -38,6 +38,6 @@ g++ src/main.cpp -o racing-game -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 ```
 
 ## Future Plans
-- [ ] Q-Learning AI agent
-- [ ] Headless training mode
-- [ ] Multiple tracks 
+-  Q-Learning AI agent
+-  Headless training mode
+- Multiple tracks 
