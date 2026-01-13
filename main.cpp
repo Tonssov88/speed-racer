@@ -64,14 +64,14 @@ int main(void){
     float speed = 0.0f;
 
     //Loading assets
-    Image trackImage = LoadImage("raceTrack.png");
+    Image trackImage = LoadImage("assets/raceTrack.png");
     Texture2D trackTexture = LoadTextureFromImage(trackImage);
-    Texture2D carTexture = LoadTexture("racecarTransparent.png");
+    Texture2D carTexture = LoadTexture("assets/racecarTransparent.png");
 
     //Defining checkpoints
     std::vector<Checkpoint> checkpoints;
     
-    // Format: start point (x,y) and end point (x,y) forming a line across the track
+    // Format: start point (x,y) and end point (x,y)
     checkpoints.push_back({{450,35}, {450, 150}, false});  // Finish line (checkpoint 0)
     checkpoints.push_back({{719, 260}, {850, 260}, false});  // Checkpoint 1
     checkpoints.push_back({{850, 665}, {723, 665}, false});  // Checkpoint 2
@@ -324,4 +324,5 @@ int main(void){
     CloseWindow();
 
     return 0;
+
 }
